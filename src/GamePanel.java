@@ -88,7 +88,7 @@ public class GamePanel extends JPanel {
         Rectangle player = new Rectangle(playerX, playerY, playerW, playerH);
 
         if (blockSize > 0) {   // ensures window is sized so blocks gets size value
-            if (spawnTimer >= 30) {  // adds blocks every x frames
+            if (spawnTimer >= 20) {  // adds blocks every x frames
                 int blockX = rand.nextInt(panelWidth - blockSize);
                 blocks.add(new Rectangle(blockX, 0, blockSize, blockSize));
                 spawnTimer = 0;
